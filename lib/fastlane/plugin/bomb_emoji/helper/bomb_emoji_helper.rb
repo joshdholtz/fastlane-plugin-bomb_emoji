@@ -61,7 +61,7 @@ end
 
 # Prep to 💣 emojis
 class IO
-  prepend Fastlane::Helper::BombEmojiHelper::IO
+  #prepend Fastlane::Helper::BombEmojiHelper::IO
 end
 
 # Prep to 💣 emojis

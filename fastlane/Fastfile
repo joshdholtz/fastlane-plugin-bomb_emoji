@@ -1,5 +1,5 @@
 lane :test do
   puts "🚀 <-- should NOT have rocket emoji"
   bomb_emoji(enabled: true)
-  STDOUT.puts "🚀 <-- should NOT have rocket emoji and no emojis after this"
+  puts "🚀 <-- should NOT have rocket emoji and no emojis after this"
 end

@@ -28,6 +28,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :enabled,
                                   env_name: "BOMB_EMOJI_ENABLED",
                                description: "Bomb all emoji from showing",
+                             default_value: true,
                                       type: Boolean)
         ]
       end
