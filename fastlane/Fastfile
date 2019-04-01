@@ -1,5 +1,6 @@
+UI.message "🚀 <-- should have rocket emoji"
+bomb_emoji
+
 lane :test do
-  puts "🚀 <-- should NOT have rocket emoji"
-  bomb_emoji(enabled: true)
-  puts "🚀 <-- should NOT have rocket emoji and no emojis after this"
+  UI.message "🚀 <-- should NOT have rocket emoji and no emojis after this"
 end

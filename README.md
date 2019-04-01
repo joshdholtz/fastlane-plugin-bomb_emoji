@@ -1,4 +1,4 @@
-# bomb_emoji plugin
+# bomb_emoji plugin 💣💥💣💥💣💥💣💥
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-bomb_emoji)
 
@@ -12,15 +12,38 @@ fastlane add_plugin bomb_emoji
 
 ## About bomb_emoji
 
-No more emojis
+No more emojis 🙌🎊🎉
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+```rb
+bomb_emoji
+
+lane :test do
+  UI.message "🚀 <-- should NOT have rocket emoji and no emojis after this"
+end
+```
+
+### Before
+
+```sh
+➜  fastlane-plugin-bomb_emoji git:(master) ✗ fastlane test
+[08:08:51]: Driving the lane 'test' 🚀
+[08:08:51]: 🚀 <-- should NOT have rocket emoji and no emojis after this
+[08:08:51]: fastlane.tools finished successfully 🎉
+```
+
+### After
+
+```sh
+➜  fastlane-plugin-bomb_emoji git:(master) ✗ fastlane test
+[08:03:01]: Driving the lane 'test'
+[08:03:01]:  <-- should NOT have rocket emoji and no emojis after this
+[08:03:01]: fastlane.tools finished successfully
+fastlane-plugin-bomb_emoji saved you 2 emoji
+````
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
 ## Run tests for this plugin
 
